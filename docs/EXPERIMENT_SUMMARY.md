@@ -8,6 +8,14 @@
 <a name="english-version"></a>
 ## 📊 English Version
 
+### 🔗 Experiment Tracking
+
+All experiments are logged on WandB: [View Dashboard](https://wandb.ai/jjhuh2-jjword/korean-hate-speech)
+
+- **Project:** korean-hate-speech
+- **Organization:** jjhuh2-jjword
+- **Total Runs:** 20+
+
 ### Project Overview
 Developed a high-performance hate speech detection system for Korean text using transformer-based models with advanced optimization techniques.
 
@@ -179,6 +187,14 @@ See `docs/REFERENCES.md` for complete bibliography.
 
 <a name="korean-version"></a>
 ## 📊 한국어 버전
+
+### 🔗 실험 추적
+
+모든 실험은 WandB에 기록되어 있습니다: [대시보드 보기](https://wandb.ai/jjhuh2-jjword/korean-hate-speech)
+
+- **프로젝트:** korean-hate-speech
+- **조직:** jjhuh2-jjword
+- **전체 실행:** 20+
 
 ### 프로젝트 개요
 트랜스포머 기반 모델과 고급 최적화 기법을 활용하여 한국어 텍스트의 고성능 혐오 표현 탐지 시스템을 개발했습니다.

@@ -1,0 +1,17 @@
+metric,value
+final_f1,0.9383
+accuracy,0.9383
+avg_confidence,0.9560
+min_confidence,0.5009
+max_confidence,0.9984
+precision_non_hate,0.9484
+recall_non_hate,0.9469
+f1_non_hate,0.9477
+precision_hate,0.9236
+recall_hate,0.9258
+f1_hate,0.9247
+model1,KcBERT_TAPT
+model1_weight,0.55
+model2,ELECTRA
+model2_weight,0.45
+ensemble_method,soft_voting

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+env/
+venv/
+my_env/
+
+# 모든 모델 파일 (전역)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+optimizer.pt
+scheduler.pt
+
+# 압축 파일 (전역)
+*.tar.gz
+*.zip
+*.tar
+
+# 특정 디렉토리 (전역)
+model/
+best_model/
+src/best_model/
+src/model/
+
+# Data
+data/raw/
+data/raw_aeda/
+data/NIKL_AU_2023_COMPETITION_v1.0/
+*.csv
+!results/*.csv
+
+# Models
+models/*/
+!models/README.md
+
+# Logs
+logs/
+*.log
+nohup*.out
+
+# WandB
+wandb/
+
+# Environment
+.env
+
+# OS
+.DS_Store

@@ -1,0 +1,12 @@
+Phase,Model,Method,Learning_Rate,Batch_Size,Epochs,F1_Score,Note
+1,KcBERT,Baseline,5e-5,16,5,0.9101,4개 모델 중 1위
+1,ELECTRA,Baseline,5e-5,16,5,0.8950,4개 모델 중 2위
+1,KoBERT,Baseline,5e-5,16,5,0.8850,4개 모델 중 3위
+1,RoBERTa,Baseline,5e-5,16,5,0.8780,4개 모델 중 4위
+2,KcBERT,AEDA증강,5e-5,16,10,0.9267,선정 모델 증강
+2,ELECTRA,AEDA증강,5e-5,16,10,0.9185,선정 모델 증강
+3,KcBERT,하이퍼파라미터튜닝,2e-5,32,12,0.9315,lr/bs/ep 최적화
+3,ELECTRA,하이퍼파라미터튜닝,1e-5,32,10,0.9185,lr/bs/ep 최적화
+4,KcBERT,TAPT+튜닝,2e-5,32,12,0.9329,도메인 적응 학습
+4,ELECTRA,튜닝(재현),1e-5,32,10,0.9180,재현성 확인
+5,Ensemble,Soft Voting,N/A,32,N/A,0.9383,KcBERT(TAPT)+ELECTRA (0.55:0.45)

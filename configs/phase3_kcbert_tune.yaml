@@ -1,0 +1,22 @@
+# Phase 3: KcBERT 하이퍼파라미터 튜닝
+model_name: beomi/kcbert-base
+dataset_dir: ./data/raw_aeda
+
+# 공통 설정
+batch_size: 32
+epochs: 10
+max_len: 512
+warmup_steps: 500
+weight_decay: 0.01
+fp16: true
+seed: 42
+
+# 실험 리스트
+experiments:
+  - name: kcbert_aug_lr2e5_bs32_ep10_v2
+    learning_rate: 2e-5
+    description: "baseline (Phase 2-4 결과)"
+    
+  - name: kcbert_aug_lr3e5_bs32_ep10_v2
+    learning_rate: 3e-5
+    description: "higher LR test"

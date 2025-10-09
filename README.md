@@ -12,6 +12,10 @@ High-performance Korean hate speech detection system using ensemble of transform
 - Accuracy: 93.83%
 - Improvement: +2.82%p from baseline
 
+## 🔗 WandB Dashboard
+
+View all experiments: [korean-hate-speech](https://wandb.ai/jjhuh2-jjword/korean-hate-speech)
+
 ## 📊 Performance Summary
 
 ![Performance Summary](results/complete_experiment_summary.png)

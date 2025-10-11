@@ -8,8 +8,8 @@ High-performance Korean hate speech detection system using ensemble of transform
 
 ## 🎯 Final Results
 
-- F1-Score: 0.9383
-- Accuracy: 93.83%
+- F1-Score: 0.9429 (Test)
+- Test Score: 94.29%
 - Improvement: +2.82%p from baseline
 
 ## 🔗 WandB Dashboard

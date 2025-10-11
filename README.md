@@ -4,7 +4,11 @@
 - **Test F1-Score: 0.9429** ⭐ (+0.46%p better than dev)
 - Improvement: +3.28%p from baseline
 
-![Performance Summary](results/complete_experiment_summary_with_test.png)# Korean Hate Speech Detection
+### Experiment Summary
+![Performance Summary](results/complete_experiment_summary_with_test.png)
+
+### Confusion Matrix & Performance Analysis
+![Confusion Matrix](results/confusion_matrix_with_test.png)
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red.svg)](https://pytorch.org/)

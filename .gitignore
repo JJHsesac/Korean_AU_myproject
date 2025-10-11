@@ -50,3 +50,9 @@ wandb/
 
 # OS
 .DS_Store
+
+# 추가 제외
+viz_part*.txt
+inference_test.py
+commit_message.txt
+final_check.sh

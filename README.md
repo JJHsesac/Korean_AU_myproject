@@ -1,4 +1,10 @@
-# Korean Hate Speech Detection
+## Final Results
+
+- **Dev F1-Score: 0.9383**
+- **Test F1-Score: 0.9429** ⭐ (+0.46%p better than dev)
+- Improvement: +3.28%p from baseline
+
+![Performance Summary](results/complete_experiment_summary_with_test.png)# Korean Hate Speech Detection
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red.svg)](https://pytorch.org/)
@@ -8,9 +14,12 @@ High-performance Korean hate speech detection system using ensemble of transform
 
 ## 🎯 Final Results
 
-- F1-Score: 0.9429 (Test)
+- Dev  F1-Score: 0.9383
+- Test  F1-Score: 0.9429
 - Test Score: 94.29%
-- Improvement: +2.82%p from baseline
+- Improvement: +3.28%p from baseline
+
+![Performance Summary](results/complete_experiment_summary_with_test.png)
 
 ## 🔗 WandB Dashboard
 

@@ -100,11 +100,20 @@ Developed a high-performance hate speech detection system for Korean text using 
 - ELECTRA: Architectural diversity (discriminator-based)
 - 55:45 ratio balances accuracy with diversity
 
-**Final Results:**
-- **Ensemble F1-Score: 0.9383** 🎯
-- Total improvement: **+2.82%p**
-- Average confidence: **95.60%**
+## 🎯 Final Test Results
 
+### Competition Submission
+- **Dev F1-Score:** 0.9383
+- **Test F1-Score:** 0.9429 ⭐
+- **Improvement over Dev:** +0.46%p
+
+### Analysis
+Test score being higher than dev indicates:
+- ✅ No overfitting
+- ✅ Good generalization
+- ✅ Stable ensemble performance
+
+The final test score of **94.29%** confirms the effectiveness of our 5-phase approach.
 ---
 
 ### 📈 Performance Summary

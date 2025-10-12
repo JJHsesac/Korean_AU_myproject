@@ -6,7 +6,7 @@
 ---
 
 <a name="english-version"></a>
-## 📊 English Version
+##  English Version
 
 ### 🔗 Experiment Tracking
 
@@ -19,11 +19,10 @@ All experiments are logged on WandB: [View Dashboard](https://wandb.ai/jjhuh2-jj
 ### Project Overview
 Developed a high-performance hate speech detection system for Korean text using transformer-based models with advanced optimization techniques.
 
-**Final Achievement: F1-Score 0.9383 (+2.82%p from baseline)**
-
+**Final Achievement: Test F1-Score 0.9429 (+3.28%p from baseline)**
 ---
 
-### 🔬 Experimental Phases
+### Experimental Phases
 
 #### Phase 1: Initial Model Selection (Baseline)
 **Objective:** Identify the best performing pre-trained Korean language model
@@ -100,23 +99,23 @@ Developed a high-performance hate speech detection system for Korean text using 
 - ELECTRA: Architectural diversity (discriminator-based)
 - 55:45 ratio balances accuracy with diversity
 
-## 🎯 Final Test Results
+## Final Test Results
 
 ### Competition Submission
 - **Dev F1-Score:** 0.9383
-- **Test F1-Score:** 0.9429 ⭐
+- **Final Test F1-Score:** 0.9429 ⭐
 - **Improvement over Dev:** +0.46%p
 
 ### Analysis
 Test score being higher than dev indicates:
-- ✅ No overfitting
-- ✅ Good generalization
-- ✅ Stable ensemble performance
+-  No overfitting
+-  Good generalization
+-  Stable ensemble performance
 
 The final test score of **94.29%** confirms the effectiveness of our 5-phase approach.
 ---
 
-### 📈 Performance Summary
+### Performance Summary
 
 | Phase | Method | Best F1 | Improvement |
 |-------|--------|---------|-------------|
@@ -125,22 +124,25 @@ The final test score of **94.29%** confirms the effectiveness of our 5-phase app
 | 3 | + Tuning | 0.9315 | +0.48%p |
 | 4 | + TAPT | 0.9329 | +0.14%p |
 | 5 | + Ensemble | **0.9383** | +0.54%p |
+| 6 | + Inference | **0.9429** | +0.46%p |
+
+**Accumulation: 3.28 percentage points from baseline**
 
 **Cumulative Improvement: 2.82 percentage points**
 
 ---
 
-### 🎯 Key Achievements
+### Key Achievements
 
-1. ✅ **Systematic Optimization:** Progressive improvement through 5 phases
-2. ✅ **Data Efficiency:** AEDA provided largest single boost
-3. ✅ **Model Selection:** Rigorous baseline comparison
-4. ✅ **Advanced Techniques:** TAPT for domain adaptation
-5. ✅ **Ensemble Strategy:** Optimized soft voting
+1.  **Systematic Optimization:** Progressive improvement through 5 phases
+2.  **Data Efficiency:** AEDA provided largest single boost
+3.  **Model Selection:** Rigorous baseline comparison
+4.  **Advanced Techniques:** TAPT for domain adaptation
+5.  **Ensemble Strategy:** Optimized soft voting
 
 ---
 
-### 🛠 Technical Highlights
+###  Technical Highlights
 
 - **Data Augmentation:** AEDA for Korean text
 - **Domain Adaptation:** Task-Adaptive Pre-Training
@@ -212,7 +214,7 @@ See `docs/REFERENCES.md` for complete bibliography.
 
 ---
 
-### 🔬 실험 단계
+### 실험 단계
 
 #### Phase 1: 초기 모델 선정 (베이스라인)
 **목표:** 최고 성능의 사전학습된 한국어 언어 모델 식별
@@ -261,12 +263,12 @@ See `docs/REFERENCES.md` for complete bibliography.
 ---
 
 #### Phase 4: 작업 적응형 사전학습 (TAPT)
-**목표:** 최고 성능 모델에 도메인 특화 사전학습 적용
+**목표:** 최고 성능 모델에 Task 특화 사전학습 적용
 
 **방법:** Masked Language Modeling을 사용하여 레이블 없는 혐오 표현 코퍼스에서 지속 사전학습
 
 **과정:**
-1. 도메인 특화 한국어 혐오 표현 텍스트 수집
+1. 혐오 표현 도메인의 레이블 없는 텍스트 수집
 2. MLM 목적함수로 KcBERT 사전학습
 3. 레이블된 분류 작업에 Fine-tuning
 
@@ -290,37 +292,39 @@ See `docs/REFERENCES.md` for complete bibliography.
 - 55:45 비율로 정확도와 다양성 균형
 
 **최종 결과:**
-- **앙상블 F1-Score: 0.9383** 🎯
-- 총 개선도: **+2.82%p**
+- **앙상블 F1-Score: 0.9383** 
+- **최종 Test 추론 F1-Score : 0.9429**
+- baseline 모델로 부터의 총 개선도: **+3.28%p**
 - 평균 신뢰도: **95.60%**
 
 ---
 
-### 📈 성능 요약
+### 성능 요약
 
 | Phase | 방법 | 최고 F1 | 개선도 |
-|-------|------|---------|--------|
+|-------|-----|---------|--------|
 | 1 | 베이스라인 | 0.9101 | - |
 | 2 | + AEDA | 0.9267 | +1.66%p |
 | 3 | + 튜닝 | 0.9315 | +0.48%p |
 | 4 | + TAPT | 0.9329 | +0.14%p |
 | 5 | + 앙상블 | **0.9383** | +0.54%p |
+| 6 | + 추론 | **0.9429** | +0.46%p |
 
-**누적 개선: 2.82 percentage points**
-
----
-
-### 🎯 주요 성과
-
-1. ✅ **체계적 최적화:** 5단계를 통한 점진적 개선
-2. ✅ **데이터 효율성:** AEDA가 가장 큰 단일 향상 제공
-3. ✅ **모델 선정:** 엄격한 베이스라인 비교
-4. ✅ **고급 기법:** 도메인 적응을 위한 TAPT
-5. ✅ **앙상블 전략:** 최적화된 soft voting
+**누적 개선: 3.28 percentage points**
 
 ---
 
-### 🛠 기술적 하이라이트
+### 주요 성과
+
+1.  **체계적 최적화:** 5단계를 통한 점진적 개선
+2.  **데이터 효율성:** AEDA가 가장 큰 단일 향상 제공
+3.  **모델 선정:** 엄격한 베이스라인 비교
+4.  **고급 기법:** 도메인 적응을 위한 TAPT
+5.  **앙상블 전략:** 최적화된 soft voting
+6.  **추론**
+---
+
+### 기술적 포인트
 
 - **데이터 증강:** 한국어 텍스트를 위한 AEDA
 - **도메인 적응:** Task-Adaptive Pre-Training
@@ -330,7 +334,7 @@ See `docs/REFERENCES.md` for complete bibliography.
 
 ---
 
-### 🏗 최종 모델 아키텍처
+### 최종 모델 아키텍처
 
 **앙상블 구성:**
 
@@ -347,27 +351,27 @@ See `docs/REFERENCES.md` for complete bibliography.
 
 ---
 
-### 💡 결론
+### 결론
 
-본 프로젝트는 다음을 통해 최첨단 혐오 표현 탐지를 구축하는 종합적 접근 방식을 보여줍니다:
+본 프로젝트는 다음과 같은 접근 방법을 사용했다.:
 
-1. 엄격한 모델 선정
+1. 전체 실험 계획을 고려한 모델 선정
 2. 전략적 데이터 증강
 3. 세심한 하이퍼파라미터 최적화
-4. 도메인 적응형 사전학습
-5. 지능적 모델 앙상블
+4. Task 적응형 사전학습
+5. 앙상블
 
-**최종 F1-Score: 0.9383** - 한국어 혐오 표현 탐지에서 의미 있는 성과.
-
----
-
-### 📊 시각화
-
-상세한 성능 차트는 `results/complete_experiment_summary.png` 참조
+**최종 TEST F1-Score: 0.9429** - 한국어 혐오 표현 탐지에서 의미 있는 성과라고 본다.
 
 ---
 
-### 📚 참고문헌
+### 시각화
+
+상세한 성능 차트는 `results/complete_experiment_summary_with_test.png` 참조
+
+---
+
+### 참고문헌
 
 전체 참고문헌은 `docs/REFERENCES.md` 참조
 

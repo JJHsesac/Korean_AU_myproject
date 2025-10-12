@@ -1,0 +1,56 @@
+# Model Configuration
+model:
+  kcbert:
+    path: "beomi/kcbert-base"
+    use_fast: true
+  electra:
+    path: "monologg/koelectra-small-discriminator"
+    use_fast: false  # ELECTRA must use slow tokenizer
+  ensemble:
+    weights: [0.55, 0.45]  # [KcBERT, ELECTRA]
+
+# Training Configuration
+training:
+  batch_size: 32
+  learning_rate: 2e-5
+  epochs: 10
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_length: 512
+  
+  # Early Stopping
+  early_stopping:
+    enabled: true
+    patience: 3
+    metric: "f1"
+
+# TAPT Configuration
+tapt:
+  mlm_probability: 0.15
+  epochs: 3
+  batch_size: 32
+  learning_rate: 5e-5
+
+# Data Augmentation
+augmentation:
+  aeda:
+    enabled: true
+    punctuation: ".,;?!"
+    insert_rate: 0.3
+
+# Paths
+paths:
+  data_dir: "./data"
+  output_dir: "./models"
+  results_dir: "./results"
+  
+# WandB
+wandb:
+  project: "korean-hate-speech"
+  entity: "jjhuh2-jjword"
+  enabled: true
+
+# Inference
+inference:
+  batch_size: 64
+  device: "cpu"  # or "cuda"

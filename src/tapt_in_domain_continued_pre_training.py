@@ -23,7 +23,7 @@ def run_tapt(
     batch_size=16,
     mlm_probability=0.15
 ):
-    print(f"=== TAPT 시작 ===")
+    print(f"=== Task-Adaptive Pre-training (TAPT) : In-domain Continued Pre-training (혐오표현 학습 데이터셋 (AEDA 증강), 테스크와 동일한 도메인 특화 학습 표현 ===")
     print(f"모델: {model_name}")
     print(f"데이터: {data_path}")
     print(f"Epochs: {epochs}\n")
@@ -98,4 +98,9 @@ if __name__ == "__main__":
         mlm_probability=0.15
     )
     
-    print(f"\n✅ TAPT 완료: {output}")
+    print(f"\n Conditional Task-Adaptive Pre-training (TAPT) 완료: {output}")
+    # AEDA 증강 학습 데이터 (혐오표현 도메인)
+    # 실제 테스크와 동일한 혐오표현 탐지 테스크 분포
+    # Masked Language Modeling (MLM) - Text only without label
+    # Task-Adaptive pre-training (TAPT) 방식으로 혐오표현 탐지 도메인에 모델 적응
+    # 근거 : Don't Stop Pretraining (Gururangan et al., 2020)의 TAPT 정의

@@ -121,10 +121,10 @@ python src/ensemble.py
 ```
 
 #### 추론 / Inference
-
+```bash
 # 단일 텍스트 예측 / Single text prediction
 python src/inference/inference.py --text "예측할 텍스트"
-
+```bash
 # CSV 파일 일괄 예측 / Batch prediction
 python src/inference/inference_csv.py --input data/test.csv --output results/predictions.csv
 ```
@@ -185,9 +185,9 @@ korean-hate-speech-detection/
 ---
 ```
 ## 핵심 기술 / Key Technologies
-
+```bash
 ### 모델 / Models
-
+```bash
 Primary Model (55% weight):
 - beomi/KcBERT-base
   - 한국어 온라인 커뮤니티 텍스트 학습
@@ -211,7 +211,7 @@ Secondary Model (45% weight):
 ```
 - 랜덤 삽입/삭제/교체 / Random insertion/deletion/swap
 - 가장 큰 성능 향상 / Biggest performance gain (+1.66%p)
-
+```bash
 #### 2. TAPT (Task-Adaptive Pre-training)
 - AEDA 증강 데이터로 추가 MLM 학습
 - 혐오 표현 도메인 특화 어휘 학습

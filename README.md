@@ -133,6 +133,7 @@ python src/inference/inference_csv.py --input data/test.csv --output results/pre
 ```
 ## 프로젝트 구조 / Project Structure
 ```
+```bash
 korean-hate-speech-detection/
 │
 ├── README.md                    # 프로젝트 설명 / Project documentation

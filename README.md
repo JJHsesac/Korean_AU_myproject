@@ -130,7 +130,7 @@ python src/inference/inference_csv.py --input data/test.csv --output results/pre
 ```
 
 ---
-
+```
 ## 프로젝트 구조 / Project Structure
 ```
 korean-hate-speech-detection/
@@ -183,7 +183,7 @@ korean-hate-speech-detection/
     └── ERRORS.md                # 에러 해결 가이드
 ```
 ---
-
+```
 ## 핵심 기술 / Key Technologies
 
 ### 모델 / Models
